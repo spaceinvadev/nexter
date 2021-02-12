@@ -13,8 +13,8 @@ html {
       font-size: 50%; } }
 
 body {
-  font-family: "Nunito", sans-serif;
-  color: #6D5D4B;
+  font-family: effra, sans-serif;
+  color: #6d5d4b;
   font-weight: 300;
   line-height: 1.6; }
 
@@ -31,48 +31,50 @@ body {
       grid-template-rows: 6rem calc(100vh - 6rem); } }
 
 .heading-1, .heading-2, .heading-3, .heading-4 {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 400; }
+  font-family: objektiv-mk1, sans-serif;
+  font-weight: 700;
+  font-style: normal; }
 
 .heading-1 {
   font-size: 4.5rem;
-  color: #F9F7F6;
+  color: #f9f7f6;
   line-height: 1; }
 
 .heading-2 {
   font-size: 4rem;
   font-style: italic;
-  line-height: 1; }
+  line-height: 128%; }
   .heading-2--light {
-    color: #F9F7F6; }
+    color: #f9f7f6; }
   .heading-2--dark {
-    color: #54483A; }
+    color: #54483a; }
 
 .heading-3 {
+  font-weight: 400;
   font-size: 1.6rem;
-  color: #C69963;
+  color: #c69963;
   text-transform: uppercase; }
 
 .heading-4 {
   font-size: 1.9rem; }
   .heading-4--light {
-    color: #F9F7F6; }
+    color: #f9f7f6; }
   .heading-4--dark {
-    color: #54483A; }
+    color: #54483a; }
 
 .btn {
-  background-color: #C69963;
+  background-color: #c69963;
   color: #fff;
   border: none;
   border-radius: 0;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: objektiv-mk1, sans-serif;
   font-size: 1.5rem;
   text-transform: uppercase;
   padding: 1.8rem 3rem;
   cursor: pointer;
-  transition: all .2s; }
+  transition: all 0.2s; }
   .btn:hover {
-    background-color: #B28451; }
+    background-color: #b28451; }
 
 .mb-s {
   margin-bottom: 2rem; }
@@ -87,7 +89,7 @@ body {
   margin-bottom: 8rem; }
 
 .sidebar {
-  background-color: #C69963;
+  background-color: #c69963;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
   display: flex;
@@ -127,7 +129,7 @@ body {
 
 .header {
   grid-column: full-start / col-end 6;
-  background-color: #54483A;
+  background-color: #54483a;
   background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(../images/hero.jpeg);
   background-size: cover;
   padding: 8rem;
@@ -155,7 +157,7 @@ body {
     grid-column-gap: 1.5rem;
     align-items: center;
     font-size: 1.6rem;
-    color: #AAA; }
+    color: #aaa; }
     .header__seenon-text::before, .header__seenon-text::after {
       content: "";
       display: block;
@@ -173,7 +175,7 @@ body {
       filter: brightness(70%); }
 
 .realtors {
-  background-color: #101D2C;
+  background-color: #101d2c;
   grid-column: col-start 7 / full-end;
   padding: 3rem;
   display: grid;
@@ -202,7 +204,7 @@ body {
     display: block; }
   .realtors__sold {
     text-transform: uppercase;
-    color: #AAA;
+    color: #aaa;
     margin-top: -3px; }
 
 .features {
@@ -219,7 +221,7 @@ body {
   grid-row-gap: 1.5rem;
   grid-column-gap: 2.5rem; }
   .feature__icon {
-    fill: #C69963;
+    fill: #c69963;
     height: 4.5rem;
     width: 4.5rem;
     grid-row: 1 / span 2;
@@ -228,7 +230,7 @@ body {
     font-size: 1.7rem; }
 
 .story__pictures {
-  background-color: #C69963;
+  background-color: #c69963;
   grid-column: full-start / col-end 4;
   background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(../images/back.jpg);
   background-size: cover;
@@ -264,7 +266,7 @@ body {
       width: 100%; } }
 
 .story__content {
-  background-color: #F9F7F6;
+  background-color: #f9f7f6;
   grid-column: col-start 5 / full-end;
   padding: 6rem 8vw;
   display: flex;
@@ -277,8 +279,7 @@ body {
       grid-row: 5 / 6; } }
 
 .story__text {
-  font-size: 1.5rem;
-  font-style: italic;
+  font-size: 1.6rem;
   margin-bottom: 4rem; }
 
 .homes {
@@ -289,7 +290,7 @@ body {
   grid-gap: 7rem; }
 
 .home {
-  background-color: #F9F7F6;
+  background-color: #f9f7f6;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3.5rem; }
@@ -299,7 +300,7 @@ body {
     grid-row: 1 / 2;
     z-index: 10; }
   .home__like {
-    fill: #C69963;
+    fill: #c69963;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     justify-self: end;
@@ -313,11 +314,11 @@ body {
     width: 80%;
     justify-self: center;
     align-self: end;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: objektiv-mk1, sans-serif;
     font-size: 1.6rem;
     text-align: center;
     padding: 1.25rem;
-    background-color: #101D2C;
+    background-color: #101d2c;
     color: #FFF;
     font-weight: 400;
     z-index: 20;
@@ -333,12 +334,12 @@ body {
       height: 2rem;
       width: 2rem;
       margin-right: 1rem;
-      fill: #C69963; }
+      fill: #c69963; }
   .home__btn {
     grid-column: 1 / -1; }
 
 .gallery {
-  background-color: #F9F7F6;
+  background-color: #f9f7f6;
   grid-column: full-start / full-end;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -394,7 +395,7 @@ body {
     object-fit: cover; }
 
 .footer {
-  background-color: #101D2C;
+  background-color: #101d2c;
   grid-column: full-start / full-end;
   padding: 8rem; }
   .footer .nav {
@@ -407,7 +408,7 @@ body {
       text-decoration: none;
       font-size: 1.4rem;
       color: #fff;
-      font-family: "Josefin Sans", sans-serif;
+      font-family: objektiv-mk1, sans-serif;
       text-transform: uppercase;
       text-align: center;
       padding: 1.5rem;
@@ -418,10 +419,10 @@ body {
       transform: translateY(-3px); }
   .footer .copyright {
     font-size: 1.4rem;
-    color: #AAA;
+    color: #aaa;
     margin: 6rem auto 0 auto;
     text-align: center;
     width: 80%; }
     .footer .copyright a {
-      color: #C69963;
+      color: #c69963;
       text-decoration: none; }
