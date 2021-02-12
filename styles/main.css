@@ -12,6 +12,24 @@ html {
     html {
       font-size: 50%; } }
 
+body::-webkit-scrollbar {
+  inline-size: 8px;
+  background: #101d2c; }
+
+body::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background: #101d2c;
+  border: 1px solid #141414; }
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #c69963;
+  border: 1px solid #101d2c; }
+
+body::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:active {
+  background: #101d2c; }
+
 body {
   font-family: effra, sans-serif;
   color: #6d5d4b;

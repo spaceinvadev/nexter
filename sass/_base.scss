@@ -36,6 +36,28 @@ html {
   }
 }
 
+body::-webkit-scrollbar {
+  inline-size: 8px;
+  background: $color-secondary;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background: $color-secondary;
+  border: 1px solid hsl(0, 0%, 8%);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: $color-primary;
+  border: 1px solid $color-secondary;
+}
+
+body::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:active {
+  background: $color-secondary;
+}
+
 body {
   font-family: $font-primary;
   color: $color-grey-dark-2;
