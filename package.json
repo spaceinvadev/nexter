@@ -7,7 +7,6 @@
     "watch:sass": "node-sass sass/main.scss styles/main.css -w",
     "devserver": "live-server --browser=firefox",
     "start": "npm-run-all --parallel devserver watch:sass",
-
     "compile:sass": "node-sass sass/main.scss styles/main.comp.css",
     "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" styles/main.comp.css -o styles/main.prefix.css",
     "compress:css": "node-sass styles/main.prefix.css styles/main.css --output-style compressed",
@@ -28,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/spaceinvadev/nexter/issues"
   },
-  "homepage": "https://github.com/spaceinvadev/nexter#readme"
+  "homepage": "https://github.com/spaceinvadev/nexter#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
 }
